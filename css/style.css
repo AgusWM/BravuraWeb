@@ -1,0 +1,797 @@
+        /*Globales*/
+        
+        h1,
+        title {
+            font-family: 'Bebas Neue';
+            color: white;
+            letter-spacing: 1px;
+            font-weight: 800;
+            font-size: 3.8rem;
+        }
+        
+        h2 {
+            font-family: 'Bebas Neue';
+            color: rgb(255, 255, 255);
+            letter-spacing: 1px;
+            font-weight: 600;
+        }
+        
+        p {
+            font-family: 'Ubuntu';
+            text-align: center;
+            font-style: normal;
+            font-weight: 400;
+            color: white;
+        }
+        
+        * {
+            box-sizing: inherit;
+        }
+        
+        body {
+            background: rgb(0, 0, 0);
+            background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(39, 9, 6, 1) 19%, rgba(63, 15, 10, 1) 29%, rgba(85, 20, 14, 1) 50%, rgba(60, 14, 10, 1) 71%, rgba(39, 9, 6, 1) 81%, rgba(0, 0, 0, 1) 100%);
+        }
+        /*header*/
+        
+        header {
+            grid-area: header;
+            background-color: black;
+            padding: 1rem 0 3rem 0;
+        }
+        
+        .navBar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 3rem;
+        }
+        
+        .navBar a img {
+            margin-left: 2rem;
+        }
+        
+        .navegacion a {
+            text-decoration: none;
+            font-family: 'Bebas Neue';
+            color: whitesmoke;
+            font-size: 20px;
+            margin-right: 2rem;
+        }
+        
+        .navegacion a:hover {
+            color: rgb(206, 14, 14);
+        }
+        /*Section*/
+        
+        section {
+            grid-area: contenido;
+        }
+        /*Footer*/
+        
+        footer {
+            grid-area: footer;
+            background-color: black;
+            margin: 0;
+            padding: 3rem 0;
+        }
+        
+        .footerBar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-top: 3rem;
+        }
+        
+        .footerBar a img {
+            margin-left: 2rem;
+        }
+        /*Nosotros*/
+        
+        .nosotrosInfo {
+            text-align: center;
+        }
+        
+        .nosotrosInfo ul {
+            font-family: 'Ubuntu';
+            list-style-type: square;
+        }
+        /*Pedidos*/
+        
+        table {
+            width: 100%;
+            border: 1px solid #000;
+            font-family: 'Ubuntu';
+            font-size: medium;
+            border: none;
+            color: white;
+        }
+        
+        th,
+        td {
+            width: 25%;
+            text-align: left;
+            vertical-align: top;
+            padding: 0.3em;
+            caption-side: bottom;
+        }
+        
+        caption {
+            padding: 0.3em;
+            color: #fff;
+            background: rgb(32, 29, 29);
+        }
+        
+        th {
+            background: rgba(226, 74, 74, 0.596);
+        }
+        
+        ol {
+            font-family: 'Ubuntu';
+        }
+        /*Utilidades*/
+        
+        .centrar-texto {
+            text-align: center;
+        }
+        
+        .verduras img {
+            height: 250px;
+        }
+        /*Grid Index*/
+        
+        #titulo {
+            display: grid;
+            grid-template-columns: 25% 50% 25%;
+            grid-template-rows: 300px;
+            height: 300px;
+            grid-template-areas: "morron title brocoli";
+            justify-items: center;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        
+        #slide {
+            display: grid;
+            grid-template-rows: 800px;
+            grid-template-columns: 100%;
+            height: 800px;
+            justify-items: center;
+            align-items: center;
+            justify-content: space-around;
+        }
+        
+        #texto {
+            display: grid;
+            grid-template-rows: 800px;
+            grid-template-columns: 100%;
+            height: 800px;
+            justify-items: center;
+            align-items: center;
+            justify-content: space-around;
+        }
+        /*Grid Redes*/
+        
+        #galery {
+            display: grid;
+            grid-template-columns: 25% 50% 25%;
+            grid-auto-rows: 1fr 1fr;
+            grid-template-areas: "foto1 foto2 foto3" "foto4 foto5 foto6";
+            grid-auto-flow: row dense;
+            grid-gap: 5px;
+            height: 100%;
+            align-items: center;
+            justify-items: center;
+        }
+        /*Grid Pedidos*/
+        
+        #textoPedidos {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 1fr 2fr;
+            grid-template-areas: "titulo" "steps";
+            height: 100%;
+            align-items: center;
+            justify-items: center;
+        }
+        
+        .textoPedidos h1 {
+            grid-area: titulo;
+            justify-content: center;
+            align-content: center;
+            border: rgb(32, 29, 29);
+        }
+        
+        .steps {
+            grid-area: steps;
+            justify-content: center;
+            align-content: center;
+            border-style: solid;
+            border-color: rgb(32, 29, 29);
+            padding: 0 2rem 0 2rem;
+            color: white;
+        }
+        
+        #formularioPedidos {
+            margin-left: 25%;
+            margin-right: 25%;
+            display: grid;
+            width: 50rem;
+            height: 50rem;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 50% 40% 10%;
+            grid-template-areas: "label1 input1" "label2 input2" "boton1 boton2";
+            align-items: center;
+            justify-content: center;
+            background-color: royalblue;
+        }
+        
+        .datos label,
+        legend {
+            grid-area: label1;
+        }
+        
+        .datos input {
+            grid-area: input1;
+        }
+        
+        .pedido label,
+        legend {
+            grid-area: label2;
+        }
+        
+        .pedido input {
+            grid-area: input2;
+        }
+        /*Galeria*/
+        
+        .imagenGaleria img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: all 0.5s;
+        }
+        
+        .imagenGaleria img:nth-child(1) {
+            grid-area: foto2;
+        }
+        
+        .imagenGaleria img:nth-child(1):hover {
+            transform: scale(2, 1);
+        }
+        
+        .imagenGaleria img:nth-child(2) {
+            grid-area: foto5;
+        }
+        
+        .imagenGaleria img:nth-child(2):hover {
+            transform: scale(2, 1);
+        }
+        
+        .imagenGaleria img:nth-child(3) {
+            grid-area: foto1;
+        }
+        
+        .imagenGaleria img:nth-child(3):hover {
+            transform: scale(1, 2);
+        }
+        
+        .imagenGaleria img:nth-child(4) {
+            grid-area: foto3;
+        }
+        
+        .imagenGaleria img:nth-child(4):hover {
+            transform: scale(1, 2);
+        }
+        
+        .imagenGaleria img:nth-child(5) {
+            grid-area: foto4;
+        }
+        
+        .imagenGaleria img:nth-child(5):hover {
+            transform: scale(1, 2);
+        }
+        
+        .imagenGaleria img:nth-child(6) {
+            grid-area: foto6;
+        }
+        
+        .imagenGaleria img:nth-child(6):hover {
+            transform: scale(1, 2);
+        }
+        /*Slider*/
+        
+        .slider {
+            width: 100%;
+            height: 800px;
+            margin: auto;
+            position: relative;
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: flex-end;
+        }
+        
+        .slider img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: all 0.5s;
+            object-fit: scale-down;
+        }
+        
+        .slider input[type="radio"] {
+            position: relative;
+            z-index: 50;
+            margin: 10px;
+        }
+        
+        .slider input[type="radio"]:checked~img {
+            opacity: 1;
+        }
+        /*Media Query*/
+        
+        @media only screen and ( max-width: 1024px) {
+            /*Globales*/
+            h1 {
+                font-family: 'Bebas Neue';
+                color: black;
+                letter-spacing: 1px;
+                font-weight: 800;
+                font-size: 3.8rem;
+            }
+            h2 {
+                font-family: 'Bebas Neue';
+                color: rgb(37, 34, 34);
+                letter-spacing: 1px;
+                font-weight: 600;
+            }
+            p {
+                font-family: 'Ubuntu';
+                text-align: center;
+                font-style: normal;
+                font-weight: 200;
+            }
+            * {
+                box-sizing: inherit;
+            }
+            body {
+                background: rgb(0, 0, 0);
+                background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(39, 9, 6, 1) 19%, rgba(63, 15, 10, 1) 29%, rgba(85, 20, 14, 1) 50%, rgba(60, 14, 10, 1) 71%, rgba(39, 9, 6, 1) 81%, rgba(0, 0, 0, 1) 100%);
+            }
+            /*header*/
+            header {
+                grid-area: header;
+                background-color: black;
+                padding: 1rem 0 3rem 0;
+            }
+            .navBar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 3rem;
+            }
+            .navBar a img {
+                margin-left: 2rem;
+            }
+            .navegacion a {
+                text-decoration: none;
+                font-family: 'Bebas Neue';
+                color: whitesmoke;
+                font-size: 20px;
+                margin-right: 2rem;
+            }
+            .navegacion a:hover {
+                color: rgb(206, 14, 14);
+            }
+            /*Section*/
+            section {
+                grid-area: contenido;
+            }
+            /*Footer*/
+            footer {
+                grid-area: footer;
+                background-color: black;
+                margin: 0;
+                padding: 3rem 0;
+            }
+            .footerBar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 3rem;
+            }
+            .footerBar a img {
+                margin-left: 2rem;
+            }
+            /*Nosotros*/
+            .nosotrosInfo ul {
+                font-family: 'Ubuntu';
+                list-style-type: square;
+            }
+            /*Pedidos*/
+            table {
+                width: 100%;
+                border: 1px solid #000;
+                font-family: 'Ubuntu';
+                font-size: medium;
+            }
+            th,
+            td {
+                width: 25%;
+                text-align: left;
+                vertical-align: top;
+                border: 1px solid #000;
+                border-collapse: collapse;
+                padding: 0.3em;
+                caption-side: bottom;
+            }
+            caption {
+                padding: 0.3em;
+                color: white;
+            }
+            th {
+                background: rgb(146, 37, 37);
+            }
+            ol {
+                font-family: 'Ubuntu';
+            }
+            /*Utilidades*/
+            .centrar-texto {
+                text-align: center;
+            }
+            .verduras img {
+                height: 250px;
+            }
+            /*grid*/
+            #titulo {
+                display: grid;
+                grid-template-columns: 25% 50% 25%;
+                grid-template-rows: 300px;
+                height: 300px;
+                grid-template-areas: "morron title brocoli";
+                justify-items: center;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+            #slide {
+                display: grid;
+                grid-template-rows: 800px;
+                grid-template-columns: 100%;
+                height: 800px;
+                justify-items: center;
+                align-items: center;
+                justify-content: space-around;
+            }
+            #texto {
+                display: grid;
+                grid-template-rows: 800px;
+                grid-template-columns: 100%;
+                height: 800px;
+                justify-items: center;
+                align-items: center;
+                justify-content: space-around;
+            }
+            /*Slider*/
+            .slider {
+                width: 100%;
+                height: 800px;
+                margin: auto;
+                position: relative;
+                list-style-type: none;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+            }
+            .slider img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: all 0.5s;
+                object-fit: scale-down;
+            }
+            .slider input[type="radio"] {
+                position: relative;
+                z-index: 50;
+                margin: 10px;
+            }
+            .slider input[type="radio"]:checked~img {
+                opacity: 1;
+            }
+        }
+        
+        @media only screen and ( max-width: 768px) {
+            h1 {
+                font-family: 'Bebas Neue';
+                color: white;
+                letter-spacing: 1px;
+                font-weight: 600;
+                font-size: 1.8rem;
+            }
+            h2 {
+                font-family: 'Bebas Neue';
+                color: white;
+                font-weight: 400;
+            }
+            p {
+                font-family: 'Ubuntu';
+                text-align: center;
+                font-style: normal;
+                font-weight: 200;
+            }
+            img {
+                height: 30%;
+                width: 30%;
+            }
+            body {
+                background: rgb(0, 0, 0);
+                background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(39, 9, 6, 1) 19%, rgba(63, 15, 10, 1) 29%, rgba(85, 20, 14, 1) 50%, rgba(60, 14, 10, 1) 71%, rgba(39, 9, 6, 1) 81%, rgba(0, 0, 0, 1) 100%);
+            }
+            /*header*/
+            header {
+                grid-area: header;
+                background-color: black;
+                padding: 1rem 0 3rem 0;
+            }
+            .navBar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 3rem;
+            }
+            .navBar a img {
+                margin-left: 2rem;
+            }
+            .navegacion a {
+                text-decoration: none;
+                font-family: 'Bebas Neue';
+                color: whitesmoke;
+                font-size: 10px;
+                margin-right: 0.5rem;
+            }
+            .navegacion a:hover {
+                color: rgb(206, 14, 14);
+            }
+            /*Section*/
+            section {
+                grid-area: contenido;
+            }
+            /*Footer*/
+            footer {
+                grid-area: footer;
+                background-color: black;
+                margin: 0;
+                padding: 1rem 0;
+            }
+            .footerBar {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding-top: 1rem;
+            }
+            .footerBar a img {
+                margin-left: 1rem;
+            }
+            .verduras {
+                height: 30%;
+                width: 30%;
+                opacity: 0;
+            }
+            #titulo {
+                display: grid;
+                grid-template-columns: 25% 50% 25%;
+                grid-template-rows: 60px;
+                height: 60px;
+                grid-template-areas: "morron title brocoli";
+                justify-items: center;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+            #slide {
+                display: grid;
+                grid-template-rows: 100px;
+                grid-template-columns: 100%;
+                height: 100px;
+                justify-items: center;
+                align-items: center;
+                justify-content: space-around;
+            }
+            #texto {
+                display: grid;
+                grid-template-rows: 100px;
+                grid-template-columns: 100%;
+                height: 100px;
+                justify-items: center;
+                align-items: center;
+                justify-content: space-around;
+            }
+            .slider {
+                width: 100%;
+                height: 100px;
+                margin: auto;
+                position: relative;
+                list-style-type: none;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+            }
+            .slider img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: all 0.5s;
+                object-fit: scale-down;
+            }
+            .slider input[type="radio"] {
+                position: relative;
+                z-index: 50;
+                margin: 1px;
+            }
+            .slider input[type="radio"]:checked~img {
+                opacity: 1;
+            }
+        }
+        
+        @media only screen and ( max-width: 320px) {
+            h1 {
+                font-family: 'Bebas Neue';
+                color: white;
+                letter-spacing: 1px;
+                font-weight: 600;
+                font-size: 1rem;
+            }
+            h2 {
+                font-family: 'Bebas Neue';
+                color: white;
+                letter-spacing: 1px;
+                font-weight: 400;
+            }
+            p {
+                font-family: 'Ubuntu';
+                text-align: center;
+                font-style: normal;
+                font-weight: 200;
+                font-size: 5px;
+            }
+            img {
+                height: 10%;
+                width: 10%;
+            }
+            body {
+                background: rgb(0, 0, 0);
+                background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(39, 9, 6, 1) 19%, rgba(63, 15, 10, 1) 29%, rgba(85, 20, 14, 1) 50%, rgba(60, 14, 10, 1) 71%, rgba(39, 9, 6, 1) 81%, rgba(0, 0, 0, 1) 100%);
+            }
+            /*header*/
+            header {
+                grid-area: header;
+                background-color: black;
+                padding: 0rem 0 0.5rem 0;
+                margin: auto;
+            }
+            .navBar {
+                display: block;
+                align-content: center;
+                justify-content: center;
+                padding-left: 4rem;
+                padding-right: 3rem;
+                margin: auto;
+            }
+            .navBar a img {
+                padding-left: 4rem;
+                padding-right: 4rem;
+                margin: auto;
+                height: 30%;
+                width: 30%;
+            }
+            .navegacion a {
+                align-items: center;
+                text-decoration: none;
+                font-family: 'Bebas Neue';
+                color: whitesmoke;
+                font-size: 10px;
+            }
+            .navegacion a:hover {
+                color: rgb(206, 14, 14);
+            }
+            /*Section*/
+            section {
+                grid-area: contenido;
+            }
+            /*Footer*/
+            footer {
+                grid-area: footer;
+                background-color: black;
+                padding: 0rem 0 0.5rem 0;
+                margin: auto;
+            }
+            .footerBar {
+                display: block;
+                align-content: center;
+                justify-content: center;
+                padding-left: 4rem;
+                padding-right: 3rem;
+                margin: auto;
+                position: center;
+            }
+            .footerBar a img {
+                height: 30%;
+                margin: auto;
+                width: 30%;
+                padding-left: 4rem;
+                padding-right: 4rem;
+            }
+            .verduras {
+                height: 30%;
+                width: 30%;
+                opacity: 0;
+            }
+            #titulo {
+                display: grid;
+                grid-template-columns: 25% 50% 25%;
+                grid-template-rows: 30px;
+                height: 60px;
+                grid-template-areas: "morron title brocoli";
+                justify-items: center;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+            #slide {
+                display: grid;
+                grid-template-rows: 100px;
+                grid-template-columns: 100%;
+                height: 100px;
+                justify-items: center;
+                align-items: center;
+                justify-content: space-around;
+            }
+            #texto {
+                display: grid;
+                grid-template-rows: 100px;
+                grid-template-columns: 100%;
+                height: 100px;
+                justify-items: center;
+                align-items: center;
+                justify-content: space-around;
+            }
+            .slider {
+                width: 100%;
+                height: 100px;
+                margin: auto;
+                position: relative;
+                list-style-type: none;
+                padding: 0;
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
+            }
+            .slider img {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                opacity: 0;
+                transition: all 0.5s;
+                object-fit: scale-down;
+            }
+            .slider input[type="radio"] {
+                position: relative;
+                z-index: 50;
+                margin: 1px;
+            }
+            .slider input[type="radio"]:checked~img {
+                opacity: 1;
+            }
+        }

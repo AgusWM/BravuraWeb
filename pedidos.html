@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Hace tu Pedido</title>
+    <meta name="description" content="Bravura es una marca que busca llevar la comida plant based hacia todos los paladares, logrando que la comida vegana no sea solo para veganos sino que tambien sea tentadora para todas les personas con diversas dietas">
+    <meta name="keywords" content="vegan, vegano, vegana, comida, picada, plant-based, cruelty-free">
+</head>
+
+<body>
+    <div id="grilla">
+        <header class="header">
+            <div class="navBar">
+                <a href="index.html">
+                    <img src="img/Logo.png" alt="">
+                </a>
+
+                <nav class="navegacion">
+                    <a href="index.html">Inicio</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="pedidos.html">Pedidos</a>
+                    <a href="redes.html">Redes</a>
+                    <a href="contacto.html">Contacto</a>
+                </nav>
+            </div>
+        </header>
+    </div>
+
+    <section id="textoPedidos">
+
+
+        <h1>Hace tu pedido aca!</h1>
+
+        <div class="steps">
+            <h2>¿Como Realizar tu pedido?</h2>
+
+            <ol>
+                <li>Elegir de la tabla la picada que mas te guste</li>
+                <li>Completar el formulario</li>
+                <li>Esperanos bien comod@ en tu casa</li>
+                <li>Pagas cuando recibis</li>
+            </ol>
+        </div>
+    </section>
+
+    <table border="4" cellpadding="1" cellspacing="2">
+        <tr>
+            <th>Nombre</th>
+            <th>Incluiye</th>
+            <th>Salsas</th>
+            <th>Precios</th>
+        </tr>
+        <tr>
+            <td>Arabe</td>
+            <td>
+                <ul>
+                    <li>Falafel</li>
+                    <li>Papas Fritas</li>
+                    <li>Pan Pita</li>
+                    <li>Taboule</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Hummus</li>
+                    <li>Babaganush</li>
+                    <li>Muhammara</li>
+
+                </ul>
+            </td>
+
+            <td>
+                <ul>
+                    <li>2 Personas: $1500</li>
+                    <li>4 Personas: $3000</li>
+
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Argenta</td>
+            <td>
+                <ul>
+                    <li>Empanadas de carne</li>
+                    <li>Milanesitas</li>
+                    <li>Papas fritas</li>
+                    <li>Bastones de Polenta</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Criolla</li>
+                    <li>Mayonesa</li>
+                    <li>Ketchup</li>
+
+                </ul>
+            </td>
+
+            <td>
+                <ul>
+                    <li>2 Personas: $1500</li>
+                    <li>4 Personas: $3000</li>
+
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Mexicana</td>
+            <td>
+                <ul>
+                    <li>Nachos</li>
+                    <li>Quesadillas</li>
+                    <li>Pinchos</li>
+                    <li>Tacos de carne</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Guacamole</li>
+                    <li>Queso y Ciboulette</li>
+                    <li>Pico de Galllo</li>
+
+                </ul>
+            </td>
+
+            <td>
+                <ul>
+                    <li>2 Personas: $1500</li>
+                    <li>4 Personas: $3000</li>
+
+                </ul>
+            </td>
+        </tr>
+        <tr>
+            <td>Yankee</td>
+            <td>
+                <ul>
+                    <li>Albondigas</li>
+                    <li>Papas Fritas</li>
+                    <li>Alitas de Tofu</li>
+                    <li>Brocoli Empanado</li>
+                </ul>
+            </td>
+            <td>
+                <ul>
+                    <li>Cheddar</li>
+                    <li>Alioli</li>
+                    <li>Barbacoa</li>
+
+                </ul>
+            </td>
+
+            <td>
+                <ul>
+                    <li>2 Personas: $1500</li>
+                    <li>4 Personas: $3000</li>
+
+                </ul>
+            </td>
+        </tr>
+
+    </table>
+    <br>
+    <div id="formularioPedidos">
+        <form action="pedido.php" method="POST">
+            <div>
+                <div class="datos">
+                    <legend>Tus Datos</legend>
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" placeholder="Tu Nombre">
+
+                    <label for="apellido">Apellido:</label>
+                    <input type="text" id="apellido" placeholder="Tu Apellido">
+
+                    <label for="celular">Celular:</label>
+                    <input type="text" id="celular" placeholder="Tu Celular">
+
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" placeholder="Calle y Nº">
+
+                    <label for="timbre">Timbre:</label>
+                    <input type="text" id="timbre" placeholder="Timbre">
+
+                    <label for="barrio">Barrio:</label>
+                    <input type="text" id="barrio" placeholder="Barrio">
+
+                </div>
+                <br>
+                <div class="pedido">
+                    <legend>Tu Pedido</legend>
+                    <label for="picada">Elegi tu Picada</label>
+                    <select name="Picada" id="picada">
+                    <option value="Arabe">Picada Arabe</option>
+                    <option value="Argenta">Picada Argenta</option>
+                    <option value="Mexicana">Picada Mexicana</option>
+                    <option value="Yankee">Picada Yankee</option>    
+                    </select>
+                    <br>
+                    <label for="Precio">Para cuantas personas?</label>
+                    <select name="Precio" id="Precio">
+                    <option value="Arabe">$1500 (2 Personas)</option>
+                    <option value="Argenta">$3000 (4 Personas)</option>   
+                    </select>
+                </div>
+                <div class="botones">
+                    <input type="submit" value="Pedir">
+                    <input type="reset" value="Borrar Formulario">
+                </div>
+            </div>
+
+        </form>
+    </div>
+    <div id="grilla">
+        <footer class="footer">
+            <div class="footerBar">
+                <a href="index.html">
+                    <img src="img/Logo.png" alt="">
+                </a>
+
+
+                <nav class="navegacion">
+                    <a href="index.html">Inicio</a>
+                    <a href="nosotros.html">Nosotros</a>
+                    <a href="pedidos.html">Pedidos</a>
+                    <a href="redes.html">Redes</a>
+                    <a href="contacto.html">Contacto</a>
+                    <nav class="navbar">
+                        <div class="container-fluid">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-danger" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </nav>
+                </nav>
+            </div>
+
+
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>

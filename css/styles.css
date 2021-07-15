@@ -1,0 +1,72 @@
+/*Variables*/
+
+body.contactoBody {
+    background-color: grey;
+}
+
+.contactoTitulo {
+    text-align: center;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.contacto {
+    display: flex;
+    font-family: 'Ubuntu';
+    text-align: center;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 2rem;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+    color: white;
+}
+
+.textoIndex {
+    display: flex;
+    align-content: center;
+    justify-content: space-around;
+}
+
+.textoIndex p {
+    text-align: center;
+    font-size: 2rem;
+    align-self: center;
+    width: 50%;
+}
+
+.nosotros {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 20% 40% 40%;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    row-gap: 1rem;
+}
+
+.nosotros .titleNos {
+    grid-row: 1;
+}
+
+.nosotros .textNos {
+    grid-row: 2;
+    width: 50%;
+    align-self: center;
+    justify-self: center;
+    font-size: 2rem;
+    background-color: rgba(0, 0, 0, 0.459);
+    color: white;
+}
+
+.nosotros .listNos {
+    grid-row: 3;
+    font-family: 'Ubuntu';
+    text-decoration: red;
+    font-size: 1.5rem;
+    justify-self: center;
+    align-self: center;
+    color: white;
+}
