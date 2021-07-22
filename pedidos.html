@@ -50,7 +50,7 @@
             </ol>
         </div>
     </section>
-
+    <br>
     <table border="4" cellpadding="1" cellspacing="2">
         <tr>
             <th>Nombre</th>
@@ -169,7 +169,8 @@
 
     </table>
     <br>
-    <div id="formularioPedidos">
+
+    <!--<div id="formularioPedidos">
         <form action="pedido.php" method="POST">
             <div>
                 <div class="datos">
@@ -218,7 +219,56 @@
             </div>
 
         </form>
-    </div>
+    </div>-->
+    <br>
+    <section class="formulario">
+        <form action="" method="POST" id="form" autocomplete="off">
+            <div class="form">
+                <h1>Completa con tus Datos</h1>
+                <div class="grupo">
+                    <input type="text" name="" id="name" required><span class="barra"></span>
+                    <label for="">Nombre</label>
+                </div>
+                <div class="grupo">
+                    <input type="text" name="" id="name" required><span class="barra"></span>
+                    <label for="">Apellido</label>
+                </div>
+                <div class="grupo">
+                    <input type="text" name="" id="name" required><span class="barra"></span>
+                    <label for="">Direccion</label>
+                </div>
+                <div class="grupo">
+                    <input type="text" name="" id="name"><span class="barra"></span>
+                    <label for="">Timbre</label>
+                </div>
+                <div class="grupo">
+                    <input type="text" name="" id="name" required><span class="barra"></span>
+                    <label for="">Celular</label>
+                </div>
+                <div class="pedido">
+                    <label for="picada">Elegi tu Picada</label>
+                    <select name="Picada" id="picada">
+                    <option value="Arabe">Picada Arabe</option>
+                    <option value="Argenta">Picada Argenta</option>
+                    <option value="Mexicana">Picada Mexicana</option>
+                    <option value="Yankee">Picada Yankee</option>    
+                    </select>
+                </div>
+                <div class="pedido">
+                    <label for="Precio">Para cuantas personas?</label>
+                    <select name="Precio" id="Precio">
+                    <option value="Arabe">$1500 (2 Personas)</option>
+                    <option value="Argenta">$3000 (4 Personas)</option>   
+                    </select>
+                </div>
+
+                <button class="pedido" type="submit">Realizar Pedido</button>
+            </div>
+        </form>
+    </section>
+
+    <br>
+
     <div id="grilla">
         <footer class="footer">
             <div class="footerBar">

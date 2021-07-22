@@ -1,72 +1,169 @@
 /*Variables*/
-
 body.contactoBody {
-    background-color: grey;
-}
+  background-color: grey; }
 
 .contactoTitulo {
-    text-align: center;
-    align-items: center;
-    justify-content: space-around;
-    justify-items: center;
-}
+  text-align: center;
+  align-items: center;
+  justify-content: space-around;
+  justify-items: center; }
 
 .contacto {
-    display: flex;
-    font-family: 'Ubuntu';
-    text-align: center;
-    font-style: normal;
-    font-weight: 200;
-    font-size: 2rem;
-    align-items: center;
-    justify-content: space-around;
-    justify-items: center;
-    color: white;
-}
+  display: flex;
+  font-family: 'Ubuntu';
+  text-align: center;
+  font-style: normal;
+  font-weight: 200;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: space-around;
+  justify-items: center;
+  color: white; }
 
 .textoIndex {
-    display: flex;
-    align-content: center;
-    justify-content: space-around;
-}
-
-.textoIndex p {
+  display: flex;
+  align-content: center;
+  justify-content: space-around; }
+  .textoIndex p {
     text-align: center;
     font-size: 2rem;
     align-self: center;
-    width: 50%;
-}
+    width: 50%; }
 
 .nosotros {
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 20% 40% 40%;
-    align-content: center;
-    align-items: center;
-    justify-content: center;
-    row-gap: 1rem;
-}
-
-.nosotros .titleNos {
-    grid-row: 1;
-}
-
-.nosotros .textNos {
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 20% 40% 40%;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  row-gap: 1rem; }
+  .nosotros .titleNos {
+    grid-row: 1; }
+  .nosotros .textNos {
     grid-row: 2;
     width: 50%;
     align-self: center;
     justify-self: center;
     font-size: 2rem;
     background-color: rgba(0, 0, 0, 0.459);
-    color: white;
-}
-
-.nosotros .listNos {
+    color: white; }
+  .nosotros .listNos {
     grid-row: 3;
     font-family: 'Ubuntu';
     text-decoration: red;
     font-size: 1.5rem;
     justify-self: center;
     align-self: center;
+    color: white; }
+
+.formulario {
+  font-family: 'Ubuntu';
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 900px;
+  width: 100%; }
+  .formulario form {
+    background-color: rgba(0, 0, 0, 0.336);
+    padding: 4rem 2rem;
+    box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    align-content: center;
+    width: auto; }
+  .formulario form .grupo {
+    position: relative;
+    margin: 45px; }
+  .formulario form .pedido {
+    margin: 20px; }
+  .formulario input {
+    background: none;
+    color: #884040;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 5px 5px 2.5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid white; }
+  .formulario input:focus {
+    outline: none; }
+  .formulario label {
     color: white;
-}
+    font-size: 16px;
+    position: absolute;
+    top: 10px;
+    left: 5px;
+    transition: 0.3s ease-in-out all;
+    pointer-events: none; }
+  .formulario input:focus ~ label,
+  .formulario input:valid ~ label {
+    background-color: none;
+    top: -14px; }
+  .formulario button {
+    font-family: 'Ubuntu';
+    background: rgba(0, 0, 0, 0.336);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.336) 0%, #540e0e 51%, rgba(0, 0, 0, 0.336) 100%);
+    background-blend-mode: multiply;
+    border: none;
+    display: block;
+    width: 80%;
+    margin: 10px auto;
+    color: white;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    align-self: center;
+    justify-self: center; }
+
+.form {
+  width: 100%;
+  margin: auto; }
+
+.pedido select {
+  background: none;
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 5px 5px 5px 2.5px;
+  display: block;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid white;
+  background-color: none; }
+
+.pedido option {
+  background-color: #1b0f0f;
+  color: white; }
+
+.formContacto {
+  height: 1000px;
+  padding-top: 10px;
+  padding-bottom: 10px; }
+  .formContacto .grupo {
+    display: inline-block; }
+  .formContacto .mensaje textarea {
+    background: none;
+    color: #884040;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 5px 5px 5px 2.5px;
+    position: relative;
+    width: 100%;
+    border: none;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding-top: 10px; }
+  .formContacto .mensaje label {
+    color: white;
+    font-size: 16px;
+    position: relative;
+    top: 10px;
+    left: 5px;
+    padding: auto;
+    pointer-events: none; }
+
+form .mensaje {
+  position: relative;
+  margin: 20px;
+  justify-content: space-between; }

@@ -38,7 +38,7 @@
         <h1 class="contactoTitulo">Consultanos ante caulquier duda!</h1>
     </div>
 
-    <div class=contacto>
+    <!-- <div class=contacto>
         <form class="row row-cols-lg-auto g-3 align-items-center" action="pedido.php" method="POST">
             <fieldset>
                 <fieldset>
@@ -75,7 +75,50 @@
             </fieldset>
 
         </form>
-    </div>
+    </div>-->
+    <section class="formulario formContacto">
+        <form action="" method="POST" id="form" autocomplete="off">
+            <div class="form">
+
+                <div class="grupo">
+                    <input type="text" name="" id="name" required><span class="barra"></span>
+                    <label for="">Nombre</label>
+                </div>
+                <div class="grupo">
+                    <input type="text" name="" id="name" required><span class="barra"></span>
+                    <label for="">Apellido</label>
+                </div>
+                <div class="grupo">
+                    <input type="email" name="" id="name" required><span class="barra"></span>
+                    <label for="">Mail</label>
+                </div>
+                <div class="grupo">
+                    <input type="text" name="" id="name" required><span class="barra"></span>
+                    <label for="">Celular</label>
+                </div>
+                <div class="pedido">
+
+                    <select name="Motivo" id="motivo">
+                        <option value="consulta">Consulta</option>
+                        <option value="reclamo">Reclamo</option>
+                        <option value="RRHH">RRHH</option>
+                        </select>
+                </div>
+                <div class="mensaje">
+                    <label for="mensaje">Mensaje:</label>
+                    <textarea name="Mensaje" id="mensaje" cols="30" rows="10"></textarea>
+                </div>
+                <div class="mensaje">
+                    <label for="">Quiero recibir novedades y promociones!</label>
+                    <input type="checkbox" id="flexSwitchCheckDefault">
+                </div>
+
+
+                <button class="pedido" type="submit">Realizar Pedido</button>
+            </div>
+        </form>
+    </section>
+
 
     <div id="grilla">
         <footer class="footer">
