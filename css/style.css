@@ -599,7 +599,7 @@
                 display: grid;
                 grid-template-rows: 100px;
                 grid-template-columns: 100%;
-                height: 100px;
+                height: 60px;
                 justify-items: center;
                 align-items: center;
                 justify-content: space-around;
@@ -612,6 +612,8 @@
                 justify-items: center;
                 align-items: center;
                 justify-content: space-around;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
             }
             .slider {
                 width: 100%;
@@ -622,12 +624,13 @@
                 padding: 0;
                 display: flex;
                 justify-content: center;
-                align-items: flex-end;
+                align-items: center;
             }
             .slider img {
-                position: absolute;
+                position: relative;
                 top: 0;
                 left: 0;
+                padding-bottom: 2rem;
                 width: 100%;
                 height: 100%;
                 opacity: 0;
@@ -663,7 +666,7 @@
                 text-align: center;
                 font-style: normal;
                 font-weight: 200;
-                font-size: 5px;
+                font-size: 12px;
             }
             img {
                 height: 10%;
@@ -764,6 +767,8 @@
                 justify-items: center;
                 align-items: center;
                 justify-content: space-around;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
             }
             .slider {
                 width: 100%;
